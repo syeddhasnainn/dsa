@@ -1,13 +1,10 @@
 arr = [7, 5, 9, 2, 8]
 
 for i in range(len(arr) - 1):
-    mini = arr[i] # mini = 7
-    for j in range(len(arr)-1):
-        
-        print('inner loop', j)
-        if arr[j] < arr[i]:
-            mini = arr[j]
-
-    print('minimum value', mini)
+    min_idx = i
+    for j in range(i+1,len(arr)):
+        if arr[j] < arr[min_idx]:
+            min_idx = j
+    arr[i], arr[min_idx] = arr[min_idx], arr[i]
+    
 print(arr)
-        
