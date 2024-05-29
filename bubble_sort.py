@@ -1,4 +1,4 @@
-arr = [1,3,8,2,9,2,5,6]
+arr = [13,46,24,52,20,9]
 
 for i in range(len(arr)):
     for j in range(len(arr)-1):
